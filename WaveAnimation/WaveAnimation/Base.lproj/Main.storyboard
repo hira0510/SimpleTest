@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="WaveAnimation" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ixQ-hc-58Y">
+                                <rect key="frame" x="144" y="250.5" width="87" height="166"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="waterBottle" translatesAutoresizingMaskIntoConstraints="NO" id="Ikn-7a-RsC">
+                                        <rect key="frame" x="0.0" y="0.0" width="87" height="166"/>
+                                    </imageView>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.0" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon" translatesAutoresizingMaskIntoConstraints="NO" id="a7A-ai-bgJ">
+                                        <rect key="frame" x="30.5" y="58.5" width="26" height="31"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="a7A-ai-bgJ" secondAttribute="height" multiplier="6:7" id="2Ox-Bp-sXN"/>
+                                        </constraints>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="a7A-ai-bgJ" firstAttribute="centerY" secondItem="ixQ-hc-58Y" secondAttribute="centerY" multiplier="148:166" id="B9X-PB-nRZ"/>
+                                    <constraint firstItem="Ikn-7a-RsC" firstAttribute="top" secondItem="ixQ-hc-58Y" secondAttribute="top" id="BSQ-Zz-TAv"/>
+                                    <constraint firstAttribute="width" secondItem="ixQ-hc-58Y" secondAttribute="height" multiplier="87:166" id="Y7d-cs-4NG"/>
+                                    <constraint firstItem="a7A-ai-bgJ" firstAttribute="width" secondItem="ixQ-hc-58Y" secondAttribute="width" multiplier="24:79" id="jru-V1-CNb"/>
+                                    <constraint firstItem="a7A-ai-bgJ" firstAttribute="centerX" secondItem="ixQ-hc-58Y" secondAttribute="centerX" id="mOr-YA-0es"/>
+                                    <constraint firstItem="Ikn-7a-RsC" firstAttribute="leading" secondItem="ixQ-hc-58Y" secondAttribute="leading" id="q11-9Y-4lF"/>
+                                    <constraint firstAttribute="bottom" secondItem="Ikn-7a-RsC" secondAttribute="bottom" id="ts6-P8-aQG"/>
+                                    <constraint firstAttribute="trailing" secondItem="Ikn-7a-RsC" secondAttribute="trailing" id="uNz-Wr-vw5"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="ixQ-hc-58Y" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="87:375" id="4Ww-Bh-TCi"/>
+                            <constraint firstItem="ixQ-hc-58Y" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="63w-O4-bLM"/>
+                            <constraint firstItem="ixQ-hc-58Y" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="OI7-wN-VzM"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="bottleImageView" destination="Ikn-7a-RsC" id="O8z-R6-jXu"/>
+                        <outlet property="contentView" destination="ixQ-hc-58Y" id="0uf-SK-D0p"/>
+                        <outlet property="lightningImageView" destination="a7A-ai-bgJ" id="2zE-Gk-YmY"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="132" y="117"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="icon" width="24" height="28"/>
+        <image name="waterBottle" width="87" height="166"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
